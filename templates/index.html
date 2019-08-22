@@ -1,11 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Agent</title>
-</head>
-<body>
-    <h1>Hello there</h1>
-</body>
-</html>
+{% extends "_layouts/page.html" %}
+
+{% set page_title = "SGT_SLTR_MLN" %}
+{% set page_id = "home" %}
+
+{% block page_head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+{% endblock %}
+
+{% block body %}
+<section class="home-main">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide0">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>SGT_SLTR_MLN</h2>
+        </div>
+        <div class="swiper-slide slide1">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>Order Disorder</h2>
+        </div>
+        <div class="swiper-slide slide2">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>Mutilated</h2>
+        </div>
+        <div class="swiper-slide slide3">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>Bit Shifter</h2>
+        </div>
+        <div class="swiper-slide slide4">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>Frektik</h2>
+        </div>
+        <div class="swiper-slide slide5">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>Home Automaton</h2>
+        </div>
+        <div class="swiper-slide slide6">
+            <h1>
+                <span hidden>Dead Agent</span>
+                {% include "_partials/logo.html" %}
+            </h1>
+
+            <h2>New Patterns</h2>
+        </div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section>
+
+<section class="home-footer">
+    <a class="continue-button" href="https://deadagent.bandcamp.com">Go</a>
+</section>
+{% endblock %}
+
+{% block page_footer %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script>
+    function resizeHomeMain() {
+        document.querySelector('article').setAttribute('style', 'height: ' + window.innerHeight + 'px;');
+    }
+
+    // resize nav when window resized
+    window.addEventListener('resize', resizeHomeMain);
+
+    resizeHomeMain();
+
+    var mySwiper = new Swiper('.home-main', {
+        // Optional parameters
+        direction: 'horizontal',
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+{% endblock %}

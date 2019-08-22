@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Source code for deadagent.net.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^4.5.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-nunjucks": "^5.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0",
     "nunjucks": "^3.2.0"
   },
   "scripts": {},

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dead Agent {% if page_title %} / {{page_title}}{% endif %}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src='/js/main.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap" rel="stylesheet">
+    {% block page_head %}
+    {% endblock %}
+</head>
+
+<body id="{% if page_id %}{{ page_id }}{% endif %}">
+    <header></header>
+
+    <article>{% block body %}{% endblock %}</article>
+
+    <footer></footer>
+
+    {% block page_footer %}
+    {% endblock %}
+</body>
+
+</html>
