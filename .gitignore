@@ -2,3 +2,4 @@ public/downloads/*.zip
 .DS_Store
 .idea
 node_modules
+bin/deploy.bash

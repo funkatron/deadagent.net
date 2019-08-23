@@ -16,6 +16,10 @@ var watchPaths = [
 var destDir = './dist';
 
 gulp.task('copy', function (done) {
+    gulp.src('./node_modules/swiper/dist/css/swiper.min.css')
+        .pipe(gulp.dest(`${destDir}/css/`));
+    gulp.src('./node_modules/swiper/dist/js/swiper.min.js')
+        .pipe(gulp.dest(`${destDir}/js/`));
     gulp.src('./node_modules/normalize.css/normalize.css')
         .pipe(gulp.dest(`${destDir}/css/`));
     gulp.src(jsFiles)
@@ -36,7 +40,7 @@ gulp.task('nunjucks', function(done) {
     gulp.src([
         srcFiles,
         '!templates/**/_*/',      //exclude folders starting with '_'
-        '!templates/**/_*/**/*',  //exclude files/subfolders in folders 
+        '!templates/**/_*/**/*',  //exclude files/subfolders in folders
     ])
         .pipe(nunjucks.compile())
         .pipe(gulp.dest(destDir));
