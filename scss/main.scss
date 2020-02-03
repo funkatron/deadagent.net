@@ -163,6 +163,7 @@ article {
         animation-duration: 1500ms;
         animation-iteration-count: 1;
         display: flex;
+        flex-wrap: wrap;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -172,6 +173,7 @@ article {
             transition: all 1s;
             border-top: 2px solid rgba($color: white, $alpha: 0.75);
             flex: 1;
+            order: 2;
             display: block;
             background-color: rgba($color: black, $alpha: 0.75);
             padding: 0.5em;
@@ -180,8 +182,9 @@ article {
             text-align: center;
             font-size: 1.5em;
         }
-        a + a {
-            border-left: 2px solid rgba($color: white, $alpha: 0.75);
+        a.button-buy-music {
+            flex: 1;
+            align-self: flex-start;
         }
         a:hover,
         a:active {
