@@ -34,25 +34,58 @@ article {
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-    #home section.home-main .swiper-wrapper .slide0, #home section.home-main .swiper-wrapper .slide1, #home section.home-main .swiper-wrapper .slide2, #home section.home-main .swiper-wrapper .slide3, #home section.home-main .swiper-wrapper .slide4, #home section.home-main .swiper-wrapper .slide5, #home section.home-main .swiper-wrapper .slide6 {
+      #home section.home-main .swiper-wrapper .swiper-slide .bcplayer-container {
+        margin-top: 2em;
+        text-align: center; }
+    #home section.home-main .swiper-wrapper .slide0,
+    #home section.home-main .swiper-wrapper .slide1,
+    #home section.home-main .swiper-wrapper .slide2,
+    #home section.home-main .swiper-wrapper .slide3,
+    #home section.home-main .swiper-wrapper .slide4,
+    #home section.home-main .swiper-wrapper .slide5,
+    #home section.home-main .swiper-wrapper .slide6 {
       animation: slidein;
       animation-duration: 1500ms;
       animation-iteration-count: 1;
       background-position: center;
       background-size: cover; }
-      #home section.home-main .swiper-wrapper .slide0 h2, #home section.home-main .swiper-wrapper .slide1 h2, #home section.home-main .swiper-wrapper .slide2 h2, #home section.home-main .swiper-wrapper .slide3 h2, #home section.home-main .swiper-wrapper .slide4 h2, #home section.home-main .swiper-wrapper .slide5 h2, #home section.home-main .swiper-wrapper .slide6 h2 {
+      #home section.home-main .swiper-wrapper .slide0 h2,
+      #home section.home-main .swiper-wrapper .slide1 h2,
+      #home section.home-main .swiper-wrapper .slide2 h2,
+      #home section.home-main .swiper-wrapper .slide3 h2,
+      #home section.home-main .swiper-wrapper .slide4 h2,
+      #home section.home-main .swiper-wrapper .slide5 h2,
+      #home section.home-main .swiper-wrapper .slide6 h2 {
         font-size: 3em;
         text-shadow: 1px 1px 0 black; }
-      #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container, #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container {
+      #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container,
+      #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container {
         width: 100%;
         text-align: center; }
-        #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container svg.dead-agent-logo, #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container svg.dead-agent-logo {
+        #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container svg.dead-agent-logo,
+        #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container svg.dead-agent-logo {
           width: 80%;
           height: auto;
           margin: auto;
           align-content: center;
           filter: drop-shadow(1px 1px 0px black); }
-          #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container svg.dead-agent-logo path, #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container svg.dead-agent-logo path {
+          #home section.home-main .swiper-wrapper .slide0 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide1 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide2 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide3 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide4 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide5 .dead-agent-logo-container svg.dead-agent-logo path,
+          #home section.home-main .swiper-wrapper .slide6 .dead-agent-logo-container svg.dead-agent-logo path {
             fill: white;
             stroke-width: 1px;
             stroke-linecap: round; }
@@ -107,12 +140,12 @@ article {
         fill: white;
         stroke: white; }
     #home section.home-main .da-swiper-button-prev {
-      left: .5em;
+      left: 0.5em;
       right: auto; }
     #home section.home-main .da-swiper-button-next {
       transform: rotate(180deg);
       left: auto;
-      right: .5em; }
+      right: 0.5em; }
   #home section.home-footer {
     animation: slidein;
     animation-duration: 1500ms;
@@ -136,10 +169,41 @@ article {
       font-size: 1.5em; }
     #home section.home-footer a + a {
       border-left: 2px solid rgba(255, 255, 255, 0.75); }
-    #home section.home-footer a:hover, #home section.home-footer a:active {
+    #home section.home-footer a:hover,
+    #home section.home-footer a:active {
       transition: all 1s;
       background-color: white;
       color: black; }
+
+.bcplayer-container {
+  width: 100%; }
+  .bcplayer-container svg {
+    margin: auto;
+    display: inherit;
+    cursor: pointer;
+    text-align: center; }
+    .bcplayer-container svg:hover circle {
+      transition: all 1s;
+      fill: white;
+      fill-opacity: 1; }
+    .bcplayer-container svg:hover path {
+      fill: black; }
+    .bcplayer-container svg.hide {
+      display: none; }
+  .bcplayer-container iframe {
+    margin: auto;
+    visibility: none;
+    width: 300px;
+    height: 0;
+    border: none; }
+    .bcplayer-container iframe.show {
+      animation: slidein;
+      animation-duration: 1500ms;
+      animation-iteration-count: 1;
+      visibility: visible;
+      transition: all 1s;
+      border: 2px solid rgba(0, 0, 0, 0.75);
+      height: 300px; }
 
 article {
   height: 100vh;
