@@ -44,8 +44,18 @@ article {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                .bcplayer-container {
+                    margin-top: 2em;
+                    text-align: center;
+                }
             }
-            .slide0, .slide1, .slide2, .slide3, .slide4, .slide5, .slide6 {
+            .slide0,
+            .slide1,
+            .slide2,
+            .slide3,
+            .slide4,
+            .slide5,
+            .slide6 {
                 animation: slidein;
                 animation-duration: 1500ms;
                 animation-iteration-count: 1;
@@ -72,9 +82,15 @@ article {
                     }
                 }
             }
-            .slide0 { background-image: url("/img/kidafrika-2000x2000.jpg"); }
-            .slide1 { background-image: url("/img/owls_to_athens_vision-2000x2000.jpg"); }
-            .slide2 { background-image: url("/img/when_force_is_gone_theres_always_mom-2000x2000.jpg"); }
+            .slide0 {
+                background-image: url("/img/kidafrika-2000x2000.jpg");
+            }
+            .slide1 {
+                background-image: url("/img/owls_to_athens_vision-2000x2000.jpg");
+            }
+            .slide2 {
+                background-image: url("/img/when_force_is_gone_theres_always_mom-2000x2000.jpg");
+            }
             .slide3 {
                 background-image: url("/img/damballah_fifth_loa-2000x2000.jpg");
                 .dead-agent-logo-container svg.dead-agent-logo {
@@ -87,16 +103,18 @@ article {
                 }
                 h2 {
                     color: black;
-                    text-shadow:
-                        0px 1px 0 white,
-                        1px 0px 0 white,
-                        0px -1px 0 white,
-                        -1px 0px 0 white;
+                    text-shadow: 0px 1px 0 white, 1px 0px 0 white, 0px -1px 0 white, -1px 0px 0 white;
                 }
             }
-            .slide4 { background-image: url("/img/god_spider_first_loa-2000x2000.jpg"); }
-            .slide5 { background-image: url("/img/high_speed_gardening-2000x2000.jpg"); }
-            .slide6 { background-image: url("/img/the_spirit_of_neuromancer-2000x2000.jpg"); }
+            .slide4 {
+                background-image: url("/img/god_spider_first_loa-2000x2000.jpg");
+            }
+            .slide5 {
+                background-image: url("/img/high_speed_gardening-2000x2000.jpg");
+            }
+            .slide6 {
+                background-image: url("/img/the_spirit_of_neuromancer-2000x2000.jpg");
+            }
         }
         .da-swiper-button-prev,
         .da-swiper-button-next {
@@ -111,17 +129,18 @@ article {
             svg {
                 transition: all 1s;
                 fill: rgba($color: black, $alpha: 0.75);
-                stroke: rgba($color: white, $alpha: .75);
+                stroke: rgba($color: white, $alpha: 0.75);
                 stroke-width: 2px;
             }
             &.swiper-button-disabled {
                 svg {
                     transition: all 1s;
-                    fill: rgba($color: black, $alpha: .5);
+                    fill: rgba($color: black, $alpha: 0.5);
                     stroke: transparent;
                 }
             }
-            &:hover, &:active {
+            &:hover,
+            &:active {
                 svg {
                     transition: all 1s;
                     fill: rgba($color: white, $alpha: 1);
@@ -130,13 +149,13 @@ article {
             }
         }
         .da-swiper-button-prev {
-            left: .5em;
+            left: 0.5em;
             right: auto;
         }
         .da-swiper-button-next {
             transform: rotate(180deg);
             left: auto;
-            right: .5em;
+            right: 0.5em;
         }
     }
     section.home-footer {
@@ -151,7 +170,7 @@ article {
         z-index: 1000;
         a {
             transition: all 1s;
-            border-top: 2px solid rgba($color: white, $alpha: .75);
+            border-top: 2px solid rgba($color: white, $alpha: 0.75);
             flex: 1;
             display: block;
             background-color: rgba($color: black, $alpha: 0.75);
@@ -162,12 +181,53 @@ article {
             font-size: 1.5em;
         }
         a + a {
-            border-left: 2px solid rgba($color: white, $alpha: .75);
+            border-left: 2px solid rgba($color: white, $alpha: 0.75);
         }
-        a:hover, a:active {
+        a:hover,
+        a:active {
             transition: all 1s;
             background-color: rgba($color: white, $alpha: 1);
             color: black;
+        }
+    }
+}
+
+.bcplayer-container {
+    width: 100%;
+    // min-height: 300px;
+    svg {
+        margin: auto;
+        display: inherit;
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+            circle {
+                transition: all 1s;
+                fill: white;
+                fill-opacity: 1;
+            }
+            path {
+                fill: black;
+            }
+        }
+        &.hide {
+            display: none;
+        }
+    }
+    iframe {
+        margin: auto;
+        visibility: none;
+        width: 300px;
+        height: 0;
+        border: none;
+        &.show {
+            animation: slidein;
+            animation-duration: 1500ms;
+            animation-iteration-count: 1;
+            visibility: visible;
+            transition: all 1s;
+            border: 2px solid rgba($color: black, $alpha: 0.75);
+            height: 300px;
         }
     }
 }

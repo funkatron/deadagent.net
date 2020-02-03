@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap" rel="stylesheet">
 
     <meta property="og:description"
-    content="SGT_SLTR_MLN is a collaboration of glitch-infected visuals and music by Ed Finkler / Dead Agent and Matt Wallace / @sgt_slaughtermelon." />
+        content="SGT_SLTR_MLN is a collaboration of glitch-infected visuals and music by Ed Finkler / Dead Agent and Matt Wallace / @sgt_slaughtermelon." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dead Agent{% if page_title %} / {{page_title}}{% endif %}" />
     <meta property="og:locale" content="en_US" />
@@ -33,6 +33,17 @@
 
     {% block page_footer %}
     {% endblock %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147407360-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147407360-1');
+    </script>
+
 </body>
 
 </html>
