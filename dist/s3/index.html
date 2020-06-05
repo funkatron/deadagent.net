@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dead Agent  / S3 Browser</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src='/js/main.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d12a133f9.js" crossorigin="anonymous"></script>
+    <meta property="og:description"
+        content="SGT_SLTR_MLN is a collaboration of glitch-infected visuals and music by Ed Finkler / Dead Agent and Matt Wallace / @sgt_slaughtermelon." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dead Agent / S3 Browser" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://deadagent.net" />
+    <meta property="og:image" content="https://deadagent.net/img/ogimg-1000x1000.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+
+    
+
+</head>
+
+<body id="">
+    <header></header>
+
+    <article>
+    <div id="navigation"></div>
+    <div id="listing"></div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var S3BL_IGNORE_PATH = true;
+        var BUCKET_NAME = '';
+        var BUCKET_URL = 'https://deadagent.s3.amazonaws.com';
+        var S3B_ROOT_DIR = '';
+        //   var S3B_SORT = 'DEFAULT';
+        var EXCLUDE_FILE = ['index.html', 'error.html']; // change to array to exclude multiple files
+        var AUTO_TITLE = true;
+        //   var S3_REGION = 's3';  for us-east-1
+    </script>
+    <script type="text/javascript" src="https://rufuspollock.github.io/s3-bucket-listing/list.js"></script>
+</article>
+
+    <footer></footer>
+
+    
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147407360-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147407360-1');
+    </script>
+
+</body>
+
+</html>
